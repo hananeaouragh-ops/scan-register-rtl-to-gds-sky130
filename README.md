@@ -2,6 +2,18 @@
 
 Educational physical implementation of an 8-bit scan register using **OpenLane 2.1.11**, SKY130A and `sky130_fd_sc_hd`. Executed in Google Colab with Yosys, OpenROAD/OpenSTA, KLayout, Magic and Netgen.
 
+## Layout views
+
+User-exported views from the implementation session. Captions describe visible structures; the images alone do not establish a specific completed flow stage. Exports 15 and 18 are identical and shown once.
+
+| Floorplan grid | Tap/endcap and I/O structures |
+|---|---|
+| ![Floorplan grid](docs/layout-17.png) | ![Tap/endcap and I/O structures](docs/layout-16.png) |
+
+| Power distribution structures | Standard cells and power distribution |
+|---|---|
+| ![Power distribution structures](docs/layout-15.png) | ![Standard cells and power distribution](docs/layout-14.png) |
+
 ## Design
 
 Active-low asynchronous reset, parallel load, serial scan shift and hold. Scan has priority over parallel load; `scan_out = q[7]`. The scan chain is described explicitly in RTL; this is not automated scan insertion.
