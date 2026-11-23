@@ -1,0 +1,3 @@
+__pycache__/
+openlane_run/
+results/scan_register.gds
